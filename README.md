@@ -1,9 +1,9 @@
 # PIZZA_DELIVERY
-The entrepreneur behind this innovative venture recognized that relying solely on pizza wouldn't be enough to secure seed funding for expanding the new Pizza Empire. To enhance the business concept, they devised a brilliant strategy to emulate the success of Uber. Thus, Pizza Runner was born.
+The entrepreneur behind this innovative venture recognized that relying solely on pizza wouldn't be enough to secure seed funding for expanding the new Pizza Empire. To enhance the business concept, he devised a brilliant strategy to emulate the success of Uber. Thus, Pizza Runner was born.
 
 The project commenced by enlisting "runners" who would be responsible for delivering fresh pizza, with operations based at the Pizza Runner Headquarters, affectionately known as the project leader's residence. Furthermore, substantial financial resources were invested in hiring freelance developers to create a mobile application capable of handling customer orders seamlessly.
 
-Here we clean the data and apply calculations so we can better direct runners and optimise Pizza Runner’s operations.  All datasets exist within the pizza_runner database schema.
+Here we clean the data and apply calculations so we can better direct runners and optimize Pizza Runner’s operations.  All datasets exist within the pizza_runner database schema.
 ## Available Data
 ### Table 1: runners
 The runners table shows the registration_date for each new runner
@@ -91,6 +91,8 @@ GROUP BY runner_id
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/56f45ebb-08ee-4dc4-9796-1da2431b3440)
+
+IMPACT: It gives details about the `Runner Performance, Order accuracy Customer Satisfaction, Efficiency` If certain runners consistently have lower success rates, it may indicate the need for training, better route planning, or other process improvements) , `Resource allocation` (We can assign more orders to runners who have a proven track record of successful deliveries, ensuring efficient use of your delivery team), `Performance Incentives`
 
 ### 4.How many of each type of pizza was delivered?
 
