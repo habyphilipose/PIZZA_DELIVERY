@@ -49,7 +49,7 @@ This table contains all of the topping_name values with their corresponding topp
 ## 📚 Table of Contents
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Case Study Questions](#case-study-questions)
-- [B.RUNNER AND CUSTOMER EXPERIENCE](#b.runner-and-customer-experience)
+  
 
 ## Entity Relationship Diagram
 
