@@ -49,7 +49,7 @@ This table contains all of the topping_name values with their corresponding topp
 ## 📚 Table of Contents
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [Case Study Questions](#case-study-questions)
-- [RUNNER AND CUSTOMER EXPERIENCE](#runner-and-customer-experience)
+- [B.RUNNER AND CUSTOMER EXPERIENCE](#B.RUNNER-AND-CUSTOMER-EXPERIENCE)
 
 ## Entity Relationship Diagram
 
@@ -212,7 +212,7 @@ GROUP BY DATE_FORMAT(order_time, '%a')
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/ccb6dbd4-b8a5-45b3-a125-813352bd4c77)
 
-## B.	RUNNER AND CUSTOMER EXPERIENCE
+## B.RUNNER AND CUSTOMER EXPERIENCE
 
 ### 1.	How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01) 
 
