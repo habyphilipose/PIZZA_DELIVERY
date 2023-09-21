@@ -46,6 +46,11 @@ This table contains all of the topping_name values with their corresponding topp
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/4e6a144e-0a00-4b6a-a760-eddcdb277c1c)
 
+## 📚 Table of Contents
+- [Entity Relationship Diagram](#entity-relationship-diagram)
+- [Case Study Questions](#case-study-questions)
+- [RUNNER AND CUSTOMER EXPERIENCE](#RUNNER-AND-CUSTOMER-EXPERIENCE)
+
 ## Entity Relationship Diagram
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/bab9688c-cd90-4d48-ae7f-449a61deac82)
