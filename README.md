@@ -115,6 +115,8 @@ GROUP BY pizza_name
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/3a95a7ab-4d0f-41f0-89a1-e53c8d8984ed)
 
+IMPACT: Knowing which pizza customer buys more give an idea about `the Inventory Management, Menu Optimization, Customer Preferences, Marketing and Promotion, Revenue and Profitability, Menu Diversification`
+
 ### 5. How many Vegetarian and Meatlovers were ordered by each customer?
 
 WITH cte AS 
@@ -156,6 +158,8 @@ ORDER BY TOTAL_PIZZAS_per_ORDER DESC
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/e8b473b9-bf70-49d5-8ef0-f8cbc1ae2bab)
 
+IMPACT: Maximum Pizza was delivered by order_id 4 with 3 pizzas. `Converting` those customers with more orders to `loyal customers` should be given top priority. There `reviews` must be taken with utmost importance.
+
 ### 7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 
 ```sql
@@ -175,6 +179,8 @@ WHERE b.order_id IS NOT NULL
 GROUP BY customer_id
 ```
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/6a478f95-9290-4d6a-8014-51045d71c3a8)
+
+IMPACT: `Customer Segmentation` should be done here. Those customers with changed pizza with extra toppings or exclusion of toppings should be given more `Personalized Choices`. For example, here customer_id 101, 102,104 should be given such options
 
 ### 8. How many pizzas were delivered that had both exclusions and extras?
 
@@ -204,6 +210,7 @@ ORDER BY hour_of_the_day
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/77301520-75db-4e9a-b987-7e898e2c7286)
 
+`Busiest Hour` of the day is found here. The workers, runners, inventory, promotions, app experience must be `very efficient` at that time of the day.
 ### 10. What was the volume of orders for each day of the week?
 ```sql
 SELECT 
@@ -213,6 +220,8 @@ GROUP BY DATE_FORMAT(order_time, '%a')
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/ccb6dbd4-b8a5-45b3-a125-813352bd4c77)
+
+Wednesday and Saturday are the days with maximum orders.
 
 ## B.RUNNER AND CUSTOMER EXPERIENCE
 
@@ -278,6 +287,8 @@ GROUP BY pizza_id
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/dc11bac1-5b58-4744-b0c5-72376607bddc)
 
+Pizza with less time to prepare got more orders from the customers. This metric should be given focus.
+
 ### 4. Is there any relationship between the number of pizzas ordered by each customer and the distance from his home to pizza shop?
 
 ```sql
@@ -302,6 +313,7 @@ ORDER BY Distance_in_between
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/f306e7aa-38c9-49eb-bb8b-439d6382ab3a)
+As `distance` between shop and customer location `decreases` the number of `orders increases`. People give importance to the time metric also.
 
 ### 5. What was the average speed for each runner for each delivery and do you notice any trend for these values?
 
@@ -327,6 +339,10 @@ ORDER BY runner_id, speed
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/1eb91091-fc5f-4e35-9a57-bc7cb312fb64)
 
+•	Runner 1’s average speed runs from 37.5km/h to 60km/h.
+•	Runner 2’s average speed runs from 35.1km/h to 93.6km/h. Runner 2 should investigated as the average speed has a 300% fluctuation rate!
+•	Runner 3’s average speed is 40km/h
+
 ### 6. What is the successful delivery percentage for each runner?
 
 ```sql
@@ -346,6 +362,12 @@ GROUP BY runner_id) AS abc
 
 ```
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/b9c21fbb-53c4-4c56-851f-406d63746fa8)
+
+•	Runner 1 has 100% successful delivery.
+•	Runner 2 has 75% successful delivery.
+•	Runner 3 has 50% successful delivery . Analyze if it’s because of the runner or due to the customer cancellation. 
+
+
 
 ## C. Ingredient Optimisation
 
@@ -396,6 +418,8 @@ GROUP BY a.extras, b.topping_name
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/4242d5fd-155b-4620-8274-8298a19150be)
 
+Adding pizza with options given to customers to `add toppings` of their choice will attract customers. The topping which is `frequently` bought by customers can be preferred as a `must try option`. This will make customers try out the favorite recipes of most of the people. 
+
 ### 3. What was the most common exclusion?
 
 ```sql
@@ -415,6 +439,8 @@ GROUP BY a.exclusions, b.topping_name
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/3f7ec3ce-b3f3-457d-bc2d-e5c516ef49c2)
+
+Analyze `why most people exclude cheese from their toppings`. It enables you to `tailor your offerings`, `marketing, and operations` to better serve customer preferences, ultimately leading to `improved business performance` and `customer loyalty`.
 
 ### 4. Generate an order item for each record in the customers_orders table in the format of one of the following:
 ### a. Meat Lovers
@@ -444,3 +470,5 @@ JOIN pizza_runner.pizza_names AS pn ON tco.pizza_id = pn.pizza_id;
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/499d2cd6-7ff5-40ff-8fc1-d0474f00392d)
+
+Seeing the order_id and order_item gives the overall picture like a `summarized view` to analyze data faster.
