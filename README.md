@@ -313,6 +313,7 @@ ORDER BY Distance_in_between
 ```
 
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/f306e7aa-38c9-49eb-bb8b-439d6382ab3a)
+
 As `distance` between shop and customer location `decreases` the number of `orders increases`. People give importance to the time metric also.
 
 ### 5. What was the average speed for each runner for each delivery and do you notice any trend for these values?
@@ -340,7 +341,9 @@ ORDER BY runner_id, speed
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/1eb91091-fc5f-4e35-9a57-bc7cb312fb64)
 
 •	Runner 1’s average speed runs from 37.5km/h to 60km/h.
+
 •	Runner 2’s average speed runs from 35.1km/h to 93.6km/h. Runner 2 should investigated as the average speed has a 300% fluctuation rate!
+
 •	Runner 3’s average speed is 40km/h
 
 ### 6. What is the successful delivery percentage for each runner?
@@ -364,7 +367,9 @@ GROUP BY runner_id) AS abc
 ![image](https://github.com/habyphilipose/PIZZA_DELIVERY/assets/31076902/b9c21fbb-53c4-4c56-851f-406d63746fa8)
 
 •	Runner 1 has 100% successful delivery.
+
 •	Runner 2 has 75% successful delivery.
+
 •	Runner 3 has 50% successful delivery . Analyze if it’s because of the runner or due to the customer cancellation. 
 
 
